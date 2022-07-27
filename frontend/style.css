@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+    background-color: darkcyan;
+    display: flex;
+}
+#heading{
+    margin: auto 8px;
+    color: white;
+}
+#uName{
+    margin: auto;
+    color:white;
+}
+#uName img{
+    height: 30px;
+    width: 30px;
+}
+
+
+#logo img{
+    margin-top: 4px;
+    margin-left: 8px;
+    height: 65px;
+    width: 75px;
+}
+
+#container{
+    height: 91vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+#user-joined{
+    border-right: 2px solid rgb(128, 128, 128);
+    overflow-y: auto;
+
+}
+#chat-screen{
+    border-left: 2px solid rgb(128, 128, 128);
+}
+#chat-screen::before{
+    content: '';
+    width: 69.8%;
+    height: 91vh;
+    top: 74px;
+    position: absolute;
+    background: url('chatbg.png') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.9;
+}
+#message{
+    height: 80vh;
+    overflow-y: auto;
+    /* background-color: lightgoldenrodyellow; */
+}
+/* #input-section{
+    background-color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 40px;
+} */
+.left{
+    float: left;
+    clear: both;
+    border: 2px solid #e2e2e2;
+    background-color: whitesmoke;
+    margin: 10px 10px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 9px;
+    font-size: 22px
+}
+.center{
+    background-color: rgb(167, 167, 167);
+    width: 75%;
+    color: white;
+    margin: 10px auto;
+    clear: both;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+.right{
+    float: right;
+    clear: both;
+    border: 2px solid #c6cd0c;
+    background-color: #fffe4d;
+    /* border: 2px solid #d5ea00;
+    background-color: #e5fb00; */
+    margin: 10px 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 9px;
+    font-size: 22px
+}
+form{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+input{
+    border-radius: 15px;
+    border: 2px solid whitesmoke;
+    display: inline-block;
+    width: 75%;
+    margin: 25px auto;
+    padding: 8px;
+    outline: none;
+}
+input:hover{
+    font-size: 15px;
+}
+button{
+    border-radius: 8px;
+    border: 2px solid whitesmoke;
+    background-color: rgb(231, 231, 231);
+    margin: 25px 13px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: gainsboro;
+    font-size: 15px;
+}
+.card{
+    display: flex;
+    margin: 15px 5px;
+    padding: 8px;
+    /* border: 2px solid black; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card img{
+    height: 50px;
+    width: 70px;
+}
+.card h4{
+    margin: auto 10px;
+}
